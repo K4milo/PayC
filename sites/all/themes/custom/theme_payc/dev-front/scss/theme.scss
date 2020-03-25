@@ -1,0 +1,20 @@
+@charset "UTF-8";
+// -- Commons -- //
+@import 'commons/fonts';
+@import 'commons/variables';
+@import 'commons/mixins';
+@import 'commons/general';
+@import 'commons/header';
+
+// -- Components -- //
+@import 'components/hero-slider';
+
+// -- Views -- //
+
+// -- Blocks -- //
+
+// -- Pages -- //
+@import 'pages/home';
+
+// -- Vendors -- //
+@import 'vendors/slick/slick';

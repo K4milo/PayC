@@ -1,0 +1,107 @@
+// Top menu
+.region-page-supertop {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba($brown,0.3);
+    padding: rem(10px);
+    .block {
+        width: 50%;
+        text-align: center;
+        @include mq('md') {
+            width: 30%;
+        }
+        br {
+            display: none;
+        }
+        ul {
+            margin: 0 0;
+        }
+        a {
+            color: $brown;
+            text-decoration: underline;
+        }
+    }
+}
+
+// Menu
+.navbar {
+    margin: 0 0;
+    &.container-fluid {
+        margin: 0 0;
+        padding: 0 0;
+        > .container-fluid {
+            @include mq('md') {
+                background-color: $white;
+                display: flex;
+                flex-wrap: wrap;
+            }    
+        }
+    }
+
+    &-header {
+        text-align: center;
+        background-color: $white;
+        .logo {
+            float: none !important;
+            img {
+                display: inline-block;
+                max-width: rem(120px);
+                @include mq('md') {
+                    max-width: rem(180px);
+                }
+            }
+        }        
+        @include mq('md') {
+            float: none;
+            width: 30%;
+        }
+    }
+
+    &-collapse {
+        padding: 0 0;
+        @include mq('md') {
+            float: none;
+            width: 70%;
+        }
+    }
+
+    // Menu
+    &-nav {
+        background-color: $white;
+        width: 100%;
+        float: none;
+        @include mq('md') {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        li {
+            display: block;
+            float: none;
+            text-align: center;
+            border-bottom: rem(1px) solid $gray-lt;
+            @include mq('md') {
+                border: none;
+                border-left: rem(1px) solid $gray-lt;
+                width: 14.2%;                
+            }
+            a {
+                font-family: $eb;
+                display: block;
+                background-color: $white !important;
+                text-transform: uppercase;
+                @include font(14px);
+                @include mq('md') {
+                    padding: rem(15px);
+                    padding-top: rem(84px);
+                    height: rem(195px);
+                }
+                &:hover {
+                    background-color: $gray-lt;
+                    color: $red;
+                }
+            }
+        }
+    }
+}
